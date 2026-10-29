@@ -1,0 +1,10 @@
+{
+  "description": "A polished, responsive redesign of ivanna.by that helps visitors explore the company’s services, browse content, and submit inquiries with ease.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
