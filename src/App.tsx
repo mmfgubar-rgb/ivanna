@@ -23,8 +23,8 @@ const services: Service[] = [
   {
     title: "Эмалировка ванн",
     path: "/uslugi/emalirovka-vann/",
-    image: "/images/service-enamel.png",
-    detail: "/images/detail-enamel.jpg",
+    image: "/ivanna/images/service-enamel.png",
+    detail: "/ivanna/images/detail-enamel.jpg",
     kicker: "Проверенный способ",
     intro:
       "Эмалировка ванн от «Ivanna.by». Покрытие жидким акрилом продлевает срок службы ванны ещё на 10–15 лет.",
@@ -39,8 +39,8 @@ const services: Service[] = [
   {
     title: "Наливная ванна",
     path: "/uslugi/nalivnaia-vanna/",
-    image: "/images/service-pour.png",
-    detail: "/images/detail-pour.jpg",
+    image: "/ivanna/images/service-pour.png",
+    detail: "/ivanna/images/detail-pour.jpg",
     kicker: "Абсолютная гладкость",
     intro:
       "Наливная ванна — современный способ реставрации металлических и чугунных ванн, раковин и душевых поддонов.",
@@ -55,8 +55,8 @@ const services: Service[] = [
   {
     title: "Акриловый вкладыш",
     path: "/uslugi/akrilovyi-vkladysh-v-vannu/",
-    image: "/images/service-liner.png",
-    detail: "/images/detail-liner.jpg",
+    image: "/ivanna/images/service-liner.png",
+    detail: "/ivanna/images/detail-liner.jpg",
     kicker: "Ванна в ванну",
     intro:
       "Вкладыш в ванну — один из самых простых способов вернуть былое великолепие старой ёмкости.",
@@ -74,28 +74,28 @@ const articles = [
   [
     "Эмалировка ванны",
     "08.09.2022",
-    "/images/article-enamel.jpg",
+    "/ivanna/images/article-enamel.jpg",
     "/emalirovka-vanny/",
     "Эмалировка — это не только новое покрытие, но и тщательная работа с основой, сколами и трещинами.",
   ],
   [
     "Как удалить плесень и грибок",
     "19.05.2021",
-    "/images/article-mold.jpg",
+    "/ivanna/images/article-mold.jpg",
     "/kak-udalit-plesen-i-gribok/",
     "Почему в ванной появляется плесень и как правильно действовать.",
   ],
   [
     "Обновляем ванну своими руками",
     "19.05.2021",
-    "/images/article-clean.jpg",
+    "/ivanna/images/article-clean.jpg",
     "/obnovlyaem-vannu-svoimi-rukami/",
     "Что происходит с эмалью под воздействием воды, чистящих средств и времени.",
   ],
   [
     "Обновить ванну",
     "19.05.2021",
-    "/images/article-renew.jpg",
+    "/ivanna/images/article-renew.jpg",
     "/obnovit-vannu/",
     "Ремонт и реставрация бытовых ванн качественными сертифицированными материалами.",
   ],
@@ -416,7 +416,7 @@ function Home({ openForm }: { openForm: () => void }) {
   return (
     <main>
       <section className="hero">
-        <img src="/images/hero.jpg" alt="Белая ванна после реставрации" />
+        <img src="/ivanna/images/hero.jpg" alt="Белая ванна после реставрации" />
         <div className="hero__shade" />
         <div className="container hero__content">
           <span>Реставрация ванн в Минске</span>
@@ -465,7 +465,7 @@ function Home({ openForm }: { openForm: () => void }) {
         <div className="container split">
           <div className="about__image">
             <img
-              src="/images/detail-enamel.jpg"
+              src="/ivanna/images/detail-enamel.jpg"
               alt="Процесс реставрации ванны"
             />
             <b>
@@ -539,7 +539,7 @@ function Home({ openForm }: { openForm: () => void }) {
           <Heading over="Наши работы" title="До и после" />
           <div>
             {[1, 2, 3, 4].map((n) => (
-              <img key={n} src={`/images/work-${n}.jpg`} alt={`Работа ${n}`} />
+              <img key={n} src={`/ivanna/images/work-${n}.jpg`} alt={`Работа ${n}`} />
             ))}
           </div>
         </div>
@@ -706,7 +706,7 @@ function About({ openForm }: { openForm: () => void }) {
         over="Ivanna.by"
         title="О компании"
         text="Индивидуальный подход к каждому клиенту и каждой ванне."
-        image="/images/about.jpg"
+        image="/ivanna/images/about.jpg"
       />
       <section className="section editorial">
         <div className="container split">
@@ -880,7 +880,7 @@ function Gallery() {
           {[1, 2, 3, 4, 2, 1, 4, 3].map((n, i) => (
             <img
               key={i}
-              src={`/images/work-${n}.jpg`}
+              src={`/ivanna/images/work-${n}.jpg`}
               alt={`Работа ${i + 1}`}
             />
           ))}
